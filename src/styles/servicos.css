@@ -1,0 +1,22 @@
+.red {
+    color: red;
+}
+
+h1 {
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.servicos {
+    border-bottom: 1px solid red;
+    padding-bottom: 20px;
+}
+
+.servicos img {
+    transition: 0.5s;
+    margin-bottom: 10px;    
+}
+
+.servicos img:hover {
+    background-color: rgba(255, 0, 0, 0.2);
+}
