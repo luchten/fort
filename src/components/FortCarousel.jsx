@@ -3,6 +3,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import React from "react";
 import '../styles/fortCarousel.css';
+import { Link } from "gatsby";
 
 export default function FortCarousel() {
     var settings = {
@@ -16,24 +17,24 @@ export default function FortCarousel() {
         arrows: false
     };
     return (
-        <div className="container-fluid">
+        <div className="container-fluid margin-top">
             <div className="row">
                 <div className="col">
                     <Slider {...settings}>
                         <div>
-                            <img className="img-fluid" src="/images/fort-banner1.png" alt="" />
+                            <Link to="#"><img className="img-fluid" src="/fort/images/fort-banner1.png" alt="" /></Link>
                         </div>
                         <div>
-                            <img className="img-fluid" src="/images/fort-banner2.png" alt="" />
+                            <Link to="#"><img className="img-fluid" src="/fort/images/fort-banner2.png" alt="" /></Link>
                         </div>
                         <div>
-                            <img className="img-fluid" src="/images/fort-banner3.png" alt="" />
+                            <Link to="#"><img className="img-fluid" src="/fort/images/fort-banner3.png" alt="" /></Link>
                         </div>
                         <div>
-                            <img className="img-fluid" src="/images/fort-banner4.png" alt="" />
+                            <Link to="#"><img className="img-fluid" src="/fort/images/fort-banner4.png" alt="" /></Link>
                         </div>
                         <div>
-                            <img className="img-fluid" src="/images/fort-banner5.png" alt="" />
+                            <Link to="#"><img className="img-fluid" src="/fort/images/fort-banner5.png" alt="" /></Link>
                         </div>
                     </Slider>
                 </div>

@@ -2,9 +2,9 @@
     color: red;
 }
 
-h1 {
+.servicos-title h1 {
     font-size: 45px;
-    font-weight: bold;
+    font-weight: 500;
 }
 
 .servicos {
@@ -14,9 +14,35 @@ h1 {
 
 .servicos img {
     transition: 0.5s;
-    margin-bottom: 10px;    
+    margin-bottom: 20px;    
 }
 
 .servicos img:hover {
     background-color: rgba(255, 0, 0, 0.2);
+}
+
+.bar-both::before, .bar-both::after, .bar-right::after {
+    position: absolute;    
+    content: '';
+    background-color: red;
+    width: 3px;
+    height: 70%;
+}
+
+.bar-both::after, .bar-right::after {
+    right: 0;
+}
+
+.bar-both::before {
+    left: 0;
+}
+
+.relative {
+    position: relative;
+}
+
+@media (max-width: 768px) {
+    .bar-both::after, .bar-both::before, .bar-right::after {
+        display: none;
+    }
 }
